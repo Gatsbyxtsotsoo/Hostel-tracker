@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Admin - Hostel Tracker</title>
+		<link rel="stylesheet" href="styles/tailwind.css" />
+	</head>
+	<body
+		class="bg-slate-800 text-white text-lg max-w-screen-md mx-auto px-4 py-10"
+	>
+		<a href="./index.html">Back to reporting</a>
+		<button
+			id="refresh"
+			class="text-xl ml-8 p-2 px-8 border border-white rounded-sm hover:text-yellow-800 hover:font-semibold transition-color duration-300 hover:bg-yellow-100"
+		>
+			Refresh
+		</button>
+		<section id="reports" class="mt-8">
+			<div class="report">
+				<p class="date"></p>
+				<p class="time"></p>
+				<p class="name"></p>
+				<p class="personId"></p>
+				<p class="title"></p>
+				<p class="message"></p>
+			</div>
+		</section>
+
+		<script type="module" src="./admin.js"></script>
+	</body>
+</html>
